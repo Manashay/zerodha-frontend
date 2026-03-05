@@ -1,9 +1,23 @@
-import React from 'react';
+import React from "react";
 
 function Hero() {
-    return ( 
-        <h1>Hero</h1>
-     );
+  return (
+    <div className="conatainer border-bottom mb-5">
+      <div className="row text-center mt-5 p-3">
+        <h1 className="">Technology</h1>
+        <h3 className="mt-3 fs-4 text-muted">
+          Sleek, modern, and intuitive trading platforms
+        </h3>
+        <p className="mt-3 mb-5">
+          Check out our{" "}
+          <a href="" style={{ textDecoration: "none" }}>
+            investment offerings&nbsp;
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  );
 }
 
 export default Hero;
