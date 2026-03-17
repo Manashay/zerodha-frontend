@@ -42,5 +42,13 @@
   "description": "",
   "main": "index.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manashay/zerodha-frontend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Manashay/zerodha-frontend/issues"
+  },
+  "homepage": "https://github.com/Manashay/zerodha-frontend#readme"
 }
