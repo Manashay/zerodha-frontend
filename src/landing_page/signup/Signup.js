@@ -32,7 +32,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/signup",
+        "https://zerodha-clone-backend-wzd3.onrender.com/signup",
         {
           ...inputValue,
         },
@@ -43,7 +43,7 @@ const Signup = () => {
         handleSuccess(message);
         setTimeout(() => {
           localStorage.setItem("username", data.username);
-          window.location.href = "http://localhost:3001/";
+          window.location.href = "https://zerodha-dashboard-ks5n.onrender.com/";
         }, 1000);
       } else {
         handleError(message);
