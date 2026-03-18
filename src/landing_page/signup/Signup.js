@@ -4,6 +4,7 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 
 const Signup = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
   const [inputValue, setInputValue] = useState({
     email: "",
@@ -27,6 +28,22 @@ const Signup = () => {
     toast.success(msg, {
       position: "bottom-right",
     });
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    // 2. Turn loading ON before the API call
+    setIsLoading(true); 
+    
+    try {
+        const response = await axios.post("...");
+        // Handle success
+    } catch (error) {
+        // Handle error
+    } finally {
+        // 3. Turn loading OFF when it's done, whether it failed or succeeded
+        setIsLoading(false); 
+    }
+  }  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -109,8 +126,8 @@ const Signup = () => {
           </span>
         </div>
         <div className="container d-grid gap-2 col-6 mt-4">
-          <button type="submit" className="btn btn-primary">
-            Submit
+          <button type="submit" className="btn btn-primary" disabled={isLoading}>
+            {isLoading ? "Waking up server... (Please wait ~30s" : "Submit"}
           </button>
         </div>
       </form>
