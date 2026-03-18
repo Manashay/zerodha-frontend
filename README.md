@@ -32,6 +32,46 @@ This application is built using a Polyrepo architecture to ensure separation of 
 
 ---
 
+## 📸 Project Showcase
+
+This section highlights the user experience across both the Frontend client application and the detailed Admin Dashboard.
+
+### Part 1: Client Frontend Application
+The main landing page, secure authentication, and user-facing screens.
+
+#### Landing Page Hero Section
+This section mimics the main Zerodha marketing page, providing entry points for the application.
+![Zerodha Clone Landing Page](Screenshot%202026-03-18%20100913.png)
+
+#### User Authentication (Signup & Login)
+Secure signup and login pages that authenticate users via the Node.js backend.
+![Signup Page](signup.png)
+![Login Page](login.png)
+
+### Part 2: Dashboard
+The core complex UI for managing portfolios, executing simulated trades, and viewing interactive charts.
+
+#### Dashboard Summary View ("Console")
+An overview of the user's equity, margins used, and active portfolio P&L.
+![Dashboard Console Summary](dashboard.png)
+
+#### Portfolio & Holdings (Interactive Data Visualization)
+The interface for viewing your currently owned stocks. Highlighting both the linear bar graph for stock prices and the interactive donut chart for portfolio diversification.
+![Dashboard Bar Graph Visualization](holdings2.png)
+![Dashboard Donut Chart Breakdown](dashboard2.png)
+
+#### Detailed Portfolio Tables (Holdings, Orders, & Positions)
+Clean, professional data tables showing raw data for the portfolio (Holdings), complete trade history (Orders), and active day trades (Positions).
+![Holdings Data Table](holdings.png)
+![Orders History Table](orders.png)
+![Active Positions Table](positions.png)
+
+#### Funds & Margin Management
+An interface to view available cash, used margins, and simulated options to add/withdraw funds to your trading account.
+![Funds Management](funds.png)
+
+---
+
 ## 💻 Run Locally
 
 To run this project on your local machine, you will need to clone all three repositories and set up your environment variables.
@@ -72,18 +112,6 @@ npm start
 
 ```
 *(Ensure that your Axios base URLs in the frontend code are pointing to http://localhost:3002 for local development)*
-
-## 📸 Project Screenshots
-
-**Landing Page**
-![Home Page](Screenshot%202026-03-18%20100913.png)
-
-**User Dashboard & Portfolio Data**
-![Dashboard Charts](dashboard2.png)
-
-**Holdings & Real-Time P&L**
-![Holdings Table](holdings.png)
-
 
 ## 👨‍💻 Author
 Manashay
